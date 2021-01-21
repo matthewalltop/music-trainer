@@ -24,7 +24,9 @@ These steps were compiled from a variety of sources and finally worked for me. I
 7. **From Powershell, run `$ENV:PKG_CONFIG_ALLOW_CROSS=1`**
 
 ### Rust Steps
-8. Copy all dependencies and features from the example here into Cargo.toml for project: https://github.com/gtk-rs/examples/blob/master/Cargo.toml
+*Step 8 is already completed in this project*
+
+8. Copy all dependencies and features from the example [here](https://github.com/gtk-rs/examples/blob/master/Cargo.toml) into Cargo.toml for project.
 9. Run `rustup target add x86_64-pc-windows-gnu`
 10. **Run `cargo run --features gtk_3_22 --target=x86_64-pc-windows-gnu`**
 
