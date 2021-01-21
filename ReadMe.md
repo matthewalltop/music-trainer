@@ -10,13 +10,13 @@ This is way easier on Linux and I may just Dockerize this to mitigate how awful 
 
 ## Get GTK working on Windows 10
 
-***NOTE**, you also need MSYS64*
+***NOTE**, you also need [MSYS64](https://sourceforge.net/p/mingw-w64/wiki2/MSYS/)*
 
-These steps were compiled from a variety of sources and finally worked for me. In contrast, Linux just works straight out of the box so go that route if you need to.
+These steps were compiled from a variety of sources and finally worked for me. In contrast, Linux just works straight out of the box so go that route if you're able. Seriously, just restart your damn PC and select Ubuntu in GRUB. It's like 2 minutes of effort to avoid this nightmare.
 
 ### Windows Steps
-1. Install C++ build tools from https://visualstudio.microsoft.com/visual-cpp-build-tools/
-2. Clone vcpkg into C:\ and bootstrap using instructions: https://github.com/microsoft/vcpkg
+1. [Install C++ build tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
+2. Clone vcpkg into C:\ and bootstrap using [instructions](https://github.com/microsoft/vcpkg)
 3. Add C:\vcpkg to %PATH%
 4. Run `vcpkg install gtk:x64-windows`
 5. Add C:\vcpkg\installed\x64-windows\bin to %PATH%
