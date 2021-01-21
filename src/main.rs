@@ -1,3 +1,8 @@
+mod input_handler;
+mod application;
+mod audio;
+
+
 fn main() {
-    println!("Hello, world!");
+    application::Application::show();
 }
